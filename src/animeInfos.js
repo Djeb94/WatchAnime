@@ -5,12 +5,12 @@ function Infos(){
 
     const[animeInfos, setAnimeInfos] = useState([]);
 
-    //Récuperer le paramètre 'id' depuis l'url
+    //Recup the params from the url
     const queryString = window.location.search;
     const urlParams	 = new URLSearchParams(queryString);
     const id = urlParams.get('id');
 
-    //Récuperer les informations d'un animé précis grâce à son id
+    //Recup specific anime's data with is id
     useEffect(() =>{
         axios.get(`https://api.jikan.moe/v4/anime/${id}`)
         .then(response =>{
