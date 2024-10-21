@@ -8,7 +8,8 @@ function Main({goToPage}){
     const[animeList, setAnimeList] = useState([]);
     const[page, setPage] = useState(goToPage);
     const[inputValue, setInputValue] = useState('');
-  
+
+    //Récuperer tous les animés de l'api
     useEffect(() => {
       axios.get(`https://api.jikan.moe/v4/top/anime?page=${page}`)
         .then(response =>{
