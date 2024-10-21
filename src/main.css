@@ -1,0 +1,55 @@
+div{
+  text-align: center;
+  justify-content: center;
+}
+
+.containeur{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0px 20px 0px 20px;
+  width: fit-content;
+  
+}
+
+.containeur img{
+  width: 150px;
+  height: 210px;
+  padding: 10px 40px;
+}
+
+.containeur h3{
+  margin: 0;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  max-width: 150px;
+  word-wrap: break-word;
+}
+
+button{
+  margin: 20px;
+  width: 100px;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+.listNavigation{
+  display: flex;
+}
+
+form{
+ padding-top: 25px;
+}
+
+input{
+  width: 25px;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+}
+
